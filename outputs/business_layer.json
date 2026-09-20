@@ -1,0 +1,28 @@
+{
+  "flow": [
+    "Customer Data",
+    "Preparation + Feature Engineering",
+    "Churn Model",
+    "Churn Probability",
+    "Risk Segmentation",
+    "Retention Action",
+    "Outcome Tracking",
+    "Model / Strategy Improvement"
+  ],
+  "risk_bands": {
+    "High Risk": {
+      "threshold": ">= 0.75",
+      "action": "Prioritized retention outreach"
+    },
+    "Medium Risk": {
+      "threshold": "0.50\u20130.7499",
+      "action": "Proactive digital engagement and targeted retention"
+    },
+    "Low Risk": {
+      "threshold": "< 0.50",
+      "action": "Normal lifecycle engagement"
+    }
+  },
+  "priority_score": "churn_probability * MonthlyCharges",
+  "note": "Prototype prioritization heuristic; not a causal retained-revenue estimate."
+}

@@ -1,0 +1,115 @@
+{
+  "dataset_shape": [
+    7043,
+    21
+  ],
+  "duplicates": 0,
+  "churn_rate": 0.2653698707936959,
+  "model_comparison": [
+    {
+      "Model": "Tree A - controlled",
+      "Accuracy": 0.7486985328916232,
+      "Precision": 0.5182926829268293,
+      "Recall": 0.7575757575757576,
+      "F1 Score": 0.6154960173787111
+    },
+    {
+      "Model": "Tree B - deeper",
+      "Accuracy": 0.7368670137245622,
+      "Precision": 0.5028248587570622,
+      "Recall": 0.7932263814616756,
+      "F1 Score": 0.6154910096818811
+    },
+    {
+      "Model": "Tree C - more complex",
+      "Accuracy": 0.7198296261239944,
+      "Precision": 0.48287292817679556,
+      "Recall": 0.7789661319073083,
+      "F1 Score": 0.5961800818553888
+    }
+  ],
+  "final_metrics": {
+    "Accuracy": 0.7486985328916232,
+    "Precision": 0.5182926829268293,
+    "Recall": 0.7575757575757576,
+    "F1 Score": 0.6154960173787111
+  },
+  "top_features": [
+    {
+      "Feature": "cat__Contract_Month-to-month",
+      "Importance": 0.6534376742211307
+    },
+    {
+      "Feature": "num__tenure",
+      "Importance": 0.11389471202692839
+    },
+    {
+      "Feature": "cat__InternetService_Fiber optic",
+      "Importance": 0.10882131899752732
+    },
+    {
+      "Feature": "num__MonthlyCharges",
+      "Importance": 0.03836536832946382
+    },
+    {
+      "Feature": "cat__OnlineSecurity_No",
+      "Importance": 0.01991734590485234
+    },
+    {
+      "Feature": "cat__OnlineBackup_No internet service",
+      "Importance": 0.01769664804509392
+    },
+    {
+      "Feature": "cat__TechSupport_No",
+      "Importance": 0.015850240573065243
+    },
+    {
+      "Feature": "cat__PaymentMethod_Electronic check",
+      "Importance": 0.01536877784850293
+    },
+    {
+      "Feature": "cat__Contract_One year",
+      "Importance": 0.006365384374778538
+    },
+    {
+      "Feature": "num__TotalCharges",
+      "Importance": 0.005830667012292502
+    }
+  ],
+  "bonus_enhancements": {
+    "class_imbalance": "class_weight=balanced",
+    "hyperparameter_tuning": {
+      "cv": 5,
+      "scoring": "f1",
+      "best_params": {
+        "classifier__max_depth": 6,
+        "classifier__min_samples_leaf": 50
+      }
+    },
+    "additional_model": "Logistic Regression",
+    "additional_eda_visualization": "Churn Rate by Tenure Group"
+  },
+  "bonus_comparison": [
+    {
+      "Model": "Final Decision Tree",
+      "Accuracy": 0.7486985328916232,
+      "Precision": 0.5182926829268293,
+      "Recall": 0.7575757575757576,
+      "F1 Score": 0.6154960173787111
+    },
+    {
+      "Model": "Tuned Decision Tree",
+      "Accuracy": 0.7415996213913867,
+      "Precision": 0.5087514585764294,
+      "Recall": 0.7771836007130125,
+      "F1 Score": 0.614950634696756
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.7425461429247515,
+      "Precision": 0.5096921322690992,
+      "Recall": 0.7967914438502673,
+      "F1 Score": 0.6216968011126565
+    }
+  ]
+}

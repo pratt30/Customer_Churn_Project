@@ -1,0 +1,31 @@
+{
+  "tuning_scoring": "F1",
+  "cross_validation_folds": 5,
+  "best_parameters": {
+    "classifier__max_depth": 6,
+    "classifier__min_samples_leaf": 50
+  },
+  "models": [
+    {
+      "Model": "Final Decision Tree",
+      "Accuracy": 0.7486985328916232,
+      "Precision": 0.5182926829268293,
+      "Recall": 0.7575757575757576,
+      "F1 Score": 0.6154960173787111
+    },
+    {
+      "Model": "Tuned Decision Tree",
+      "Accuracy": 0.7415996213913867,
+      "Precision": 0.5087514585764294,
+      "Recall": 0.7771836007130125,
+      "F1 Score": 0.614950634696756
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.7425461429247515,
+      "Precision": 0.5096921322690992,
+      "Recall": 0.7967914438502673,
+      "F1 Score": 0.6216968011126565
+    }
+  ]
+}
